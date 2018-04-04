@@ -1,0 +1,8 @@
+*.iml
+**/build
+**/bin
+**/.settings
+**/.gradle
+**/.idea/
+**.zip
+**.rar

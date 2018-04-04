@@ -4,5 +4,5 @@
 **/.settings
 **/.gradle
 **/.idea/
-**/.rar
 *.zip
+.rar

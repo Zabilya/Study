@@ -1,3 +1,6 @@
-*.rar
-*.idea
-*.gradle
+*.iml
+**/build
+**/bin
+**/.settings
+**/.gradle
+**/.idea/

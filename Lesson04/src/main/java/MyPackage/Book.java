@@ -44,9 +44,9 @@ public class Book {
         // return ToStringBuilder.reflectionToString(this, ToStringStyle.SIMPLE_STYLE);
 
         // каждое поле с новой строки
-        //return ToStringBuilder.reflectionToString(this, ToStringStyle.MULTI_LINE_STYLE);
+        return ToStringBuilder.reflectionToString(this, ToStringStyle.MULTI_LINE_STYLE);
 
         // как и первый вариант, но без названия полей
-        return ToStringBuilder.reflectionToString(this, ToStringStyle.NO_FIELD_NAMES_STYLE);
+        //return ToStringBuilder.reflectionToString(this, ToStringStyle.NO_FIELD_NAMES_STYLE);
     }
 }

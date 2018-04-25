@@ -20,15 +20,6 @@ public class FibonacciTest {
     }
 
     @Test
-    public void chooseNumber() throws Exception {
-        String input = "4";
-        InputStream in = new ByteArrayInputStream(input.getBytes());
-        System.setIn(in);
-
-        assertEquals("4", fib.chooseNumber());
-    }
-
-    @Test
     public void findFibo() throws Exception {
         assertEquals(0, fib.findFibo(0));
 

@@ -6,4 +6,4 @@
 **/.idea/
 *.zip
 *.rar
-/Lesson3/out/*
+**/out/

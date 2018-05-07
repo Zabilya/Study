@@ -19,12 +19,11 @@ public class FibonacciAPITest {
     }
 
     @Test
-    public void testRightFibonacciNumber() throws Exception {
-        assertEquals(new BigInteger("55"), fibonacciAPI.findFibonacciNumber(10));
-    }
+    public void testFindFibonacciNumberRight() throws Exception {
+        assertEquals(new BigInteger("55"), fibonacciAPI.findFibonacciNumber(10)); }
 
     @Test(expected = IllegalArgumentException.class)
-    public void testNehativeNumber(){
+    public void testNegativeNumber(){
         fibonacciAPI.findFibonacciNumber(-1);
     }
 
@@ -34,8 +33,25 @@ public class FibonacciAPITest {
     }
 
     @Test(expected = IllegalArgumentException.class)
-    public void testNullValue(){
-        fibonacciAPI.findFibonacciNumber(null);
-    }
+    public void testNullValue(){ fibonacciAPI.findFibonacciNumber(null); }
 
+    @Test
+    public void testFindFirst46FibonacciNumberRight() {
+        assertEquals(55, fibonacciAPI.findFirst46FibonacciNumber(10)); }
+
+    @Test(expected  = IllegalArgumentException.class)
+    public void testFindFirst46FibonacciValueMoreThen46() {
+        fibonacciAPI.findFirst46FibonacciNumber(47); }
+
+    @Test
+    public void testFindFirst92FibonacciNumberRight(){
+        assertEquals(55, fibonacciAPI.findFirst92FibonacciNumber(10)); }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testFindFirst92FibonacciNumberMoreThen92(){
+        fibonacciAPI.findFirst92FibonacciNumber(93); }
+
+    @Test
+    public void testRecursivelyFindFibonacciRight(){
+        assertEquals(55, fibonacciAPI.recursivelyFindFibonacci(10)); }
 }
